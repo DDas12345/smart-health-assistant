@@ -143,3 +143,44 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.checker-box {
+  max-width: 650px;
+  margin: auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.checker-box input {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #99f6e4;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.checker-box button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  background-color: #0f766e;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checker-box button:hover {
+  background-color: #115e59;
+}
+
+.suggestion {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #ecfeff;
+  border-left: 5px solid #0f766e;
+  border-radius: 8px;
+  line-height: 1.5;
+}
