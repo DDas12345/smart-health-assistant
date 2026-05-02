@@ -1,9 +1,10 @@
 import React from 'react'
 
-function FeatureCard() {
+function FeatureCard({ title, description }) {
     return (
-        <div>
-            <p>Feature</p>
+        <div className="feature-card">
+            <h3>{title}</h3>
+            <p>{description}</p>
         </div>
     )
 }

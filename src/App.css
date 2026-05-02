@@ -1,4 +1,145 @@
-/* *{
-    background-color: aqua;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-} */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4fbf9;
+  color: #1f2937;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background-color: #0f766e;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar h1 {
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  background: linear-gradient(135deg, #ccfbf1, #ecfeff);
+}
+
+.hero-content {
+  max-width: 700px;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 46px;
+  color: #0f766e;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.hero-content button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  background-color: #0f766e;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background-color: #115e59;
+}
+
+.section {
+  padding: 60px;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #0f766e;
+  margin-bottom: 35px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature-card h3 {
+  color: #0f766e;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 18px 25px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 34px;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
