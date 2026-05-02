@@ -184,3 +184,79 @@ body {
   border-radius: 8px;
   line-height: 1.5;
 }
+
+.tracker-box {
+  max-width: 750px;
+  margin: auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 14px;
+  border: 2px solid #99f6e4;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.input-row button,
+.habit-item button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #0f766e;
+  color: white;
+  cursor: pointer;
+}
+
+.input-row button:hover,
+.habit-item button:hover {
+  background-color: #115e59;
+}
+
+.habit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.habit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ecfeff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.habit-item div {
+  display: flex;
+  gap: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+@media (max-width: 600px) {
+  .input-row {
+    flex-direction: column;
+  }
+
+  .habit-item {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}
+
