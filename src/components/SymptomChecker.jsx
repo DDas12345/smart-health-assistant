@@ -17,6 +17,14 @@ function SymptomChecker() {
             setSuggestion('You may have cold. Take steam, drink warm fluids, and rest properly.')
         } else if (userSymptom.trim() === '') {
             setSuggestion('Please enter a symptom first.')
+        } else if (
+            userSymptom.includes('stomach pain') ||
+            userSymptom.includes('stomach ache') ||
+            userSymptom.includes('belly pain')
+        ) {
+            setSuggestion(
+                'You may have stomach discomfort. Eat light food, stay hydrated, and avoid oily or spicy food.'
+            )
         } else {
             setSuggestion('Please monitor your symptoms and consult a doctor if the problem continues.')
         }
