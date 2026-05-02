@@ -260,3 +260,35 @@ body {
   }
 }
 
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.button-row button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #0f766e;
+  color: white;
+  cursor: pointer;
+}
+
+.button-row button:hover {
+  background-color: #115e59;
+}
+
+.tracker-box h3 {
+  text-align: center;
+  font-size: 28px;
+  color: #0f766e;
+  margin-bottom: 12px;
+}
+
+.tracker-box p {
+  text-align: center;
+  line-height: 1.5;
+}
