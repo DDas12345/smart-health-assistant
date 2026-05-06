@@ -1,9 +1,17 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function MedicineReminder() {
     const [medicine, setMedicine] = useState('')
     const [time, setTime] = useState('')
-    const [reminders, setReminders] = useState([])
+
+    const [reminders, setReminders] = useState(() => {
+        const savedReminders = localStorage.getItem('medicineReminders')
+        return savedReminders ? JSON.parse(savedReminders) : []
+    })
+
+    useEffect(() => {
+        localStorage.setItem('medicineReminders', JSON.stringify(reminders))
+    }, [reminders])
 
     function addReminder() {
         if (medicine.trim() === '' || time === '') {
