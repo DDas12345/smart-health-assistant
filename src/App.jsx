@@ -8,6 +8,7 @@ import SleepTracker from './components/SleepTracker'
 import MedicineReminder from './components/MedicineReminder'
 import HealthTips from './components/HealthTips'
 import Hero from './components/Hero'
+import Footer from './components/Footer'
 import './App.css'
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
             <MedicineReminder />
 
             <HealthTips />
+            <Footer />
         </div>
     )
 }
