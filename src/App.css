@@ -18,6 +18,10 @@ button {
   transition: 0.3s;
 }
 
+button:hover {
+  transform: scale(1.03);
+}
+
 .navbar {
   max-width: 1200px;
   margin: auto;
@@ -128,6 +132,7 @@ button {
 
 .feature-card {
   text-align: center;
+  transition: 0.3s;
 }
 
 .feature-card:hover {

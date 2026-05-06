@@ -18,7 +18,7 @@ function WaterTracker() {
         setGlasses(0)
     }
     return (
-        <section className='section'>
+        <section className="section" id="water">
             <h2>Water Tracker</h2>
             <div className="tracker-box">
                 <h3>{glasses} / {goal} glasses</h3>

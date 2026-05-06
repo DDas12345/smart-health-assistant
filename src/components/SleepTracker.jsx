@@ -22,7 +22,7 @@ function SleepTracker() {
     }
 
     return (
-        <section className="section">
+        <section className="section" id="sleep">
             <h2>Sleep Tracker</h2>
             <div className="tracker-box">
                 <input

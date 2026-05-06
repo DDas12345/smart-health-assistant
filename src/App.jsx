@@ -18,7 +18,7 @@ function App() {
 
             <Hero />
 
-            <section className='section'>
+            <section className="section" id="features">
                 <h2>Our Features</h2>
                 <div className='features-grid'>
                     <FeatureCard title="Symptom Checker" description="Enter your symptoms and get basic health suggestions." />
