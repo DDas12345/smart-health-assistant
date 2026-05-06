@@ -26,6 +26,10 @@ function HabitTracker() {
         })
         setHabits(updatedHabits)
     }
+    function deleteHabit(id) {
+        const filteredHabits = habits.filter((item) => item.id !== id)
+        setHabits(filteredHabits)
+    }
     return (
         <section className='section' id='habits'>
             <h2>Habit Tracker</h2>
